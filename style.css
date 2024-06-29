@@ -1,0 +1,146 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(113, 231, 129, 0.308);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00b7ff;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+.container li {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+footer {
+    background-color: #23beb2;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .container ul {
+        flex: 1;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container, header, nav ul li a, footer {
+    animation: fadeIn 2s;
+}
+
+.change-color-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.change-color-button:hover {
+    background-color: #0056b3;
+}
+.intro-text {
+    text-align: center;
+    padding: 20px;
+}
+
+#about-content, #projects-content, #contact-content, #skills-content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #39d2dd;
+    border: 1px solid #d32b2b;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .container ul {
+        flex: 1;
+        margin: 10px;
+    }
+}
+.center{
+    text-align: center;
+}
+.contact-info{
+    text-align: center;
+    color:#007bff;
+
+}
+
